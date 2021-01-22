@@ -1,0 +1,21 @@
+type ServicioCliente{
+    id_servicio: Int!
+    id_usuario: String
+    descripcion_servicio: String!
+    fecha_servicio: String!
+}
+
+input ServicioInput{
+    id_usuario: String
+    descripcion_servicio: String!
+}
+
+input ServicioUpdateInput{
+    id_servicio: Int!
+    id_usuario: String
+    descripcion_servicio: String!
+}
+
+input ServicioDeleteInput{
+     id_servicio: Int!
+}

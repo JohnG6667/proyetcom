@@ -1,21 +1,18 @@
 type Mutation{
-    createProducto(producto: ProductoInput):Producto
+    createPersona(persona: PersonaInput): Persona
+    updatePersona(persona: PersonaUpdateInput): Persona
+    deletePersona(persona: PersonaDeleteInput) :Persona
+
+    createUsuario(usuario: UsuarioInput): Usuario
+    updateUsuario(usuario: UsuarioUpdateInput): Usuario
+    deleteUsuario(usuario: UsuarioDeleteInput): Usuario
+    loginUsuario(usuario: UsuarioLogin): Usuario
+
+    createProducto(producto: ProductoInput): Producto
     updateProducto(producto: ProductoUpdateInput): Producto
-    deleteProducto(id: Int): Producto
+    deleteProducto(producto: ProductoDeleteInput): Producto
 
-    createGenero(genero: GeneroInput):Genero
-    updateGenero(genero: GeneroUpdateInput):Genero
-    deleteGenero(id: Int):Genero
-    
-    createTipo_producto(tipo_producto: Tipo_productoInput):Tipo_producto
-    updateTipo_producto(tipo_producto: Tipo_productoUpdateInput):Tipo_producto
-    deleteTipo_producto(id: Int):Tipo_producto
-
-    createTalla(talla: TallaInput):Talla
-    updateTalla(talla: TallaUpdateInput):Talla
-    deleteTalla(id: Int):Talla
-
-    createUsuario(usuario: UsuarioInput):Usuario
-    updateUsuario(usuario: UsuarioUpdateInput):Usuario
-    deleteUsuario(id:String): Usuario
+    createServicio(serviciocliente: ServicioInput): ServicioCliente
+    updateServicio(serviciocliente: ServicioUpdateInput): ServicioCliente
+    deleteServicio(serviciocliente: ServicioDeleteInput): ServicioCliente
 }

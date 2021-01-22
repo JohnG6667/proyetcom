@@ -1,0 +1,62 @@
+
+type Persona{
+    cedula_persona: String!
+    nombre_persona:String!
+    apellido_persona:String!
+    direccion_persona:String!
+    telefono_persona:String!
+    email_persona:String!
+    fechanac_persona:String
+}
+
+input PersonaInput{
+    cedula_persona: String!
+    nombre_persona:String!
+    apellido_persona:String!
+    direccion_persona:String!
+    telefono_persona:String!
+    email_persona:String!
+    fechanac_persona:String
+}
+
+input PersonaUpdateInput{
+    cedula_persona: String!
+    nombre_persona:String!
+    apellido_persona:String!
+    direccion_persona:String!
+    telefono_persona:String!
+    email_persona:String!
+    fechanac_persona:String
+}
+
+input PersonaDeleteInput{
+    cedula_persona: String!
+}
+
+type Usuario{
+    id_usuario: String!
+    cedula_persona: String!
+    contrasena_usuario: String!
+    fecharegistro_usuario:String!
+}
+
+input UsuarioInput{
+    id_usuario: String!
+    cedula_persona: String!
+    contrasena_usuario: String!
+}
+
+input UsuarioUpdateInput{
+    id_usuario: String!
+    cedula_persona: String!
+    contrasena_usuario: String!
+}
+
+input UsuarioDeleteInput{
+    id_usuario: String!
+}
+
+input UsuarioLogin{
+    id_usuario: String!
+    contrasena_usuario: String!
+}

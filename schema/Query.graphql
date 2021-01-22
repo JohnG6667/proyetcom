@@ -1,7 +1,6 @@
 type Query {
-    productos(id_producto:String):[Producto]
-    generos(nombre_genero:String):[Genero]
-    tipo_productos(tipo_producto:String):[Tipo_producto]
-    tallas(nombre_talla:String):[Talla]
-    usuario(id_usuario:String):[Usuario]
+    persona (cedula_persona: String): [Persona]
+    usuario(id_usuario: String): [Usuario]
+    producto(id_producto: Int): [Producto]
+    serviciocliente(id_servicio: Int):[ServicioCliente]
 }

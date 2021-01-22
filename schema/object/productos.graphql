@@ -1,0 +1,27 @@
+type Producto{
+    id_producto: Int
+    nombre_producto: String!
+    descripcion_producto: String!
+    fecharegistro_producto: String!
+    precio_producto: Float!
+    imagen: String
+}
+
+input ProductoInput{
+    nombre_producto: String!
+    descripcion_producto: String!
+    precio_producto: Float!
+    imagen: String
+}
+
+input ProductoUpdateInput{
+    id_producto: Int!
+    nombre_producto: String!
+    descripcion_producto: String!
+    precio_producto: Float!
+    imagen: String
+}
+
+input ProductoDeleteInput{
+    id_producto: Int!
+}
